@@ -14,7 +14,7 @@
  *    limitations under the License.
  */
 package org.apache.ibatis.autoconstructor;
-
+//对应HSQLDB中的Subject表
 public class PrimitiveSubject {
   private final int id;
   private final String name;
@@ -28,5 +28,16 @@ public class PrimitiveSubject {
     this.age = age;
     this.height = height;
     this.weight = weight;
+  }
+
+  @Override
+  public String toString() {
+    return "PrimitiveSubject{" +
+            "id=" + id +
+            ", name='" + name + '\'' +
+            ", age=" + age +
+            ", height=" + height +
+            ", weight=" + weight +
+            '}';
   }
 }

@@ -32,6 +32,7 @@ public class AnnotatedSubject {
     this.weight = weight;
   }
 
+  // TODO: 2020/8/20 AutomapConstructor注解使用
   @AutomapConstructor
   public AnnotatedSubject(final int id, final String name, final int age, final Integer height, final Integer weight) {
     this.id = id;
